@@ -1,0 +1,29 @@
+﻿<Canvas x:Name="parentCanvas"
+        xmlns="http://schemas.microsoft.com/client/2007" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        Loaded="Page_Loaded" 
+        x:Class="HCLT.MSFT.TIL.SilverlightConvertor.Page;assembly=ClientBin/HCLT.MSFT.TIL.SilverlightConvertor.dll"
+        Background="White"
+        >
+  <Canvas x:Name="Layer_1" Width="1024" Height="768" Canvas.Left="0" Canvas.Top="0">
+    <Image x:Name="BackgroundImage" Source="Background.jpg" Width="1024" Height="768" Canvas.Left="0" Canvas.Top="0">
+      <Image.RenderTransform>
+        <TransformGroup>
+          <MatrixTransform Matrix="1,0,0,1,2.32608e-005,3.39793e-005"/>
+        </TransformGroup>
+      </Image.RenderTransform>
+    </Image>
+    <Image Source="" Canvas.Left="0" Canvas.Top="0" x:Name="PptSlideImage" >
+      <Image.RenderTransform>
+        <TransformGroup>
+          <MatrixTransform Matrix="1,0,0,1,32,15"/>
+        </TransformGroup>
+      </Image.RenderTransform>
+    </Image>
+    <TextBlock Text="4" x:Name="SlidesCount" Visibility="Collapsed"/>
+    <TextBlock Width="77" Height="14" Canvas.Left="518" Canvas.Top="742" Text="Slide-1" x:Name="SlideNumber" Foreground="#FF131316" FontFamily="Verdana" FontSize="12" />
+    <TextBlock Width="92" Height="20" Canvas.Left="884" Canvas.Top="740" Text="Full Screen" x:Name="FullScreen" TextDecorations="Underline" Foreground="#FF131316" FontFamily="Verdana" FontSize="12" FontWeight="Normal" />
+    <TextBlock Width="30" Height="20" Canvas.Left="120" Canvas.Top="740" Text="Prev" x:Name="tbPrev" TextDecorations="Underline" Foreground="#FF131316" FontFamily="Verdana" FontSize="12" FontWeight="Normal" />
+    <TextBlock Width="30" Height="20" Canvas.Left="170" Canvas.Top="740" Text="Next" x:Name="tbNext" TextDecorations="Underline" Foreground="#FF131316" FontFamily="Verdana" FontSize="12" FontWeight="Normal" />
+  </Canvas>
+</Canvas>
